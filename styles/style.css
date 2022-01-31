@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(210, 46%, 95%);
+}
+
+.card {
+    background-color: white;
+    max-width: 320px;
+    height: 491px;
+    border-radius: 10px;
+}
+
+.content {
+    max-height: 100%;
+}
+
+.picture {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 33px;
+    position: relative;
+}
+
+.illustration {
+    width: 320px;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    object-position: 0 25%;
+}
+
+.paragraphs {
+    margin-bottom: 18px;
+    letter-spacing: 0.01rem;
+}
+
+.content__p {
+    padding-left: 30px;
+    padding-right: 30px;
+    color: hsl(214, 17%, 51%);
+    line-height: 1.2rem;
+}
+
+.content__p--bold {
+    font-size: 15px;
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+}
+
+.content__author {
+    max-width: 100%;
+    height: auto;
+    padding: 0 30px;
+    position: relative;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.author__picture {
+    max-width: 100%;
+    height: auto;
+    margin-right: -50px;
+}
+
+.author__picture img {
+    border-radius: 50%;
+    width: 40%;
+}
+
+.author__p {
+    width: 100%;
+    height: auto;
+    line-height: 0.5rem;
+}
+
+.author__name {
+    color: hsl(217, 19%, 35%);
+}
+
+.author__metadata {
+    color: hsl(212, 23%, 69%);
+}
+
+.author__share {
+    padding: 10px;
+    background-color: hsl(210, 46%, 95%);
+    border-radius: 50%;
+}
+
+.menu-pc {
+    display: none;
+}
+
+.menu-phone {
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(212, 23%, 69%);
+    max-width: 100%;
+    height: auto;
+    padding: 14px 30px;
+    position: relative;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 10px 10px;
+}
+
+.menu-phone_p {
+    letter-spacing: 0.2rem;
+    margin-right: -30px;
+}
+
+.author__share--menu {
+    background-color: hsl(214, 17%, 51%);
+}
+
+.twitter {
+    padding: 0 15px;
+}
+
+.change-color {
+    filter: brightness(0) invert(1);
+}
+
+.attribution {
+    font-size: 11px;
+    color: hsl(214, 17%, 51%);
+    text-align: center;
+    position: fixed;
+    bottom: 15px;
+}
+
+.attribution a {
+    color: hsl(214, 17%, 51%);
+}
+
+.attribution a:hover {
+    color: hsl(217, 19%, 35%);
+}
+
+@media (min-width: 1024px) {
+    .card {
+        max-width: 712px;
+        max-height: 267px;
+    }
+    
+    .picture {
+        margin: 0;
+        float: left;
+    }
+    
+    .illustration {
+        border-radius: 10px 0 0 10px;
+        width: 272px;
+        height: 267px;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        padding: 35px;
+    }
+
+    .paragraphs {
+        margin-bottom: 0;
+    }
+
+    .content__p {
+        padding: 0;
+
+    }
+
+    .content__p--bold {
+        margin-top: 0;
+        margin-bottom: 12px;
+        line-height: 1.5rem;
+        font-size: 17px;
+    }
+
+    .content__author {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .author__picture {
+        margin-right: -76px;
+    }
+    
+    .author__picture img {
+        width: 30%;
+    }
+
+    .author__p {
+        line-height: 0.4rem;
+    }
+
+    .author__share {
+        padding: 8px;
+    }
+
+    .menu-pc {
+        position: absolute;
+        top: 50%; left: 63.2%;
+        background-color: hsl(217, 19%, 35%);
+        color: hsl(212, 23%, 69%);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 230px;
+        border-radius: 10px;
+    }
+
+    .menu-pc_p {
+        letter-spacing: 0.2rem;
+        margin-right: 18px;
+    }
+
+    .triangle {
+        position: absolute;
+        top: 80%;
+        display: inline-block;
+        margin: 0 5px;
+        vertical-align: middle;
+        border-top: solid 18px hsl(217, 19%, 35%);
+        border-left: solid 18px transparent;
+        border-right: solid 18px transparent;
+    }
+}
